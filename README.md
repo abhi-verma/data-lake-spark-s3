@@ -16,7 +16,6 @@ The data model resembles a star schema with one Fact table, songplays and four d
 ### Project Structure
 - dl.cfg: This is a configuration file which stores the AWS Access Key Id and Secret Access Key. The user would be used to access the S3 service.
 - etl.py: This script contains the ETL pipelines. It first reads json data from the log-data and song-data S3 buckets, processes them using Spark, by filtering, modifying and adding derived columns and uploads the data back to abhi-spark-data-lake bucket into a data model consisting of fact and dimension tables.
-- img folder: This contains the data model image used in this readme file.
 
 ### Project Steps
 1. In a AWS account, create a user with access to S3 and copy the access key id and secret access key to the dl.cfg file.
